@@ -1,0 +1,255 @@
+.homepage {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/images/Mountain.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .homepage-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            width: 90%;
+            font-size: 64px;
+            line-height: 75px;
+            letter-spacing: 5%;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 35px;
+            color: white;
+
+            span {
+                color: $secondary_color;
+            }
+        }
+
+        p {
+            font-size: 28px;
+            color: white;
+            font-weight: 600;
+            line-height: 33px;
+            text-align: center;
+        }
+
+        .span {
+            color: white;
+            font-size: 18px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 40px;
+            border: none;
+            background-color: $secondary-color;
+            margin-top: 120px;
+            border-radius: 6px;
+            color: rgb(37, 35, 35);
+            font-size: 19px;
+            font-weight: 500;
+        }
+    }
+
+    .social-media-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.itenary-main-wrapper {
+    background: #040c0e;
+    background: linear-gradient(to right, #040c0e, #051416, #07191a, #061315);
+    padding: 40px 0;
+
+    .itenary-wrapper {
+        .card {
+            width: 100%;
+            border-radius: 10px;
+            background: #0c1a1c;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(6px);
+
+            figure {
+                height: 250px;
+
+                img {
+                    border: none;
+                }
+            }
+
+            .card-body {
+                background: rgba(7, 25, 26, 0.9);
+                color: #f1f5f9;
+                h5{
+                    font-size:24px;
+                    margin-bottom:16px;
+                }
+                .btn{
+                    background-color:$secondary-color;
+                    border: none;
+                }
+                .read-toggle {
+                color: #38bdf8;
+                font-weight: 500;
+                text-decoration: none;
+                }
+
+                .read-toggle:hover {
+                text-decoration: underline;
+                }
+            }
+
+        }
+
+    }
+}
+.about-us{
+     background: #040c0e;
+    background: linear-gradient(to right, #040c0e, #051416, #07191a, #061315);
+    padding: 40px 0;
+    .about-description{
+        color: #ddd;
+    }
+    .about-image-wrapper{
+        figure{
+            border-radius: 10px;
+            height:500px;
+            overflow:hidden ;
+        }
+    }
+}
+.reviews-main-wrapper{
+    background: #040c0e;
+    background: linear-gradient(to right, #040c0e, #051416, #07191a, #061315);
+    padding: 40px 0;
+    .review-wrap{
+        padding:20px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        margin-top: 20px;
+        margin-bottom:40px;
+        .trekker-info{
+            display: flex;
+            column-gap: 20px;   
+            align-items: start;
+            figure{
+                width:40px;
+                height:40px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .trekker-name{
+                p{
+                    margin-bottom:0;
+                    color: #ffffff;
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+                span{
+                    color: #ddd;
+                    font-size: 12px;
+                }
+            }
+        } 
+        .rating-wrapper{
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
+            padding:10px 0 20px 0;
+            .star-wrap{
+                display: flex;
+                align-items: center;
+                column-gap:10px;
+                svg{
+                    color: rgb(255, 174, 0);
+                }
+            }
+            .date-wrap{
+                color: #b4b1b1;
+                font-size: 14px;
+            }
+        }
+        .trek-name{
+            p{
+                font-size: 22px;
+                color: #ddd;
+                font-weight: 700;
+                color: $secondary-color;
+                margin-bottom: 6px;
+            }
+        }
+        .review-desc{
+            font-size: 18px;
+            line-height: 28px;
+            color: #ddd;
+        }
+    }
+}
+ .gallery-wrapper{
+ background: #040c0e;
+    background: linear-gradient(to right, #040c0e, #051416, #07191a, #061315);
+    padding: 40px 0;
+ }
+.gallery {
+    
+column-count: 4;
+column-gap: 16px;
+}
+
+
+@media (max-width: 1200px) {
+.gallery { column-count: 3; }
+}
+
+
+@media (max-width: 768px) {
+.gallery { column-count: 2; }
+}
+
+
+@media (max-width: 480px) {
+.gallery { column-count: 1; }
+}
+
+
+.gallery-item {
+    break-inside: avoid;
+    margin-bottom: 16px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+.gallery-item img {
+width: 100%;
+display: block;
+}
+.caption {
+padding: 10px 12px;
+font-size: 14px;
+color: #333;
+}   
