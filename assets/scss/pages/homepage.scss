@@ -253,3 +253,116 @@ padding: 10px 12px;
 font-size: 14px;
 color: #333;
 }   
+.contact-banner{
+    padding-top:40px;
+    background: #040c0e;
+    background: linear-gradient(to right, #040c0e, #051416, #07191a, #061315);
+    color: white;
+    h1{
+        font-size:50px;
+        font-weight:700;
+        display: inline-block;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap:5px;
+        margin-bottom: 100px;
+        @media screen and (max-width:1000px){
+            margin-bottom:60px;
+        }
+        li{
+            list-style-type: none;
+            a{
+                font-size:20px;
+                font-weight:400;
+            }
+          
+        }
+        .active{
+            a{
+                color:$secondary-color;
+            }
+        }
+    }
+    .contact-form{
+        @media screen and (max-width:1000px){
+           .row{
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+           } 
+        
+        }
+        h3{
+            color: $secondary-color;
+            opacity:0.9;
+            margin:0;
+        }
+        h3::before {   
+            width: 28%;
+        }
+
+        P{  font-weight:300;
+            font-size: 17px;
+            line-height: 1.625;
+            color: #6b6363;
+            width:90%;
+            margin:0;
+        }
+        
+        .form-column{
+            display: flex;
+            flex-direction: column;
+            row-gap:25px;
+        .information-content{
+            display: flex;  
+            align-items:center;
+            svg{
+                width:20%;
+            }
+                .information-text{
+                    width:60%;
+                    span{
+                        font-size:18px;
+                        font-weight:400;
+                    }
+                    p{
+                        font-size:14px;
+                        width:80%;
+                        font-weight: 400;
+                    }
+                }
+            }
+            input{
+                width:100%;
+                border:1px solid rgba(169, 165, 165, 0.249);
+                border-radius:15px;
+            }
+            .text-area{
+                height:100px;
+            }
+        }
+    }
+    .main-button{
+        background-color: $secondary-color;
+        color: white;
+        padding: 10px 32px;
+        border: none;
+        border-radius:10px;
+    }
+}
+.map{
+    iframe{
+        width:100%;  
+    }
+}
+
+@media screen and (max-width:1500px) {
+     .homepage-content {
+        h1 {
+            font-size: 44px;
+        }
+    }
+}
