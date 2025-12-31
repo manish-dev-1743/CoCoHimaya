@@ -1,0 +1,129 @@
+.detail-wrapper {
+    border-radius: 10px;
+   
+    figure {
+        width: 100%;
+        height: 350px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .trek-description{
+         
+        p{
+            font-size: 16px;
+            color: #fff;
+            line-height: 32px;
+            margin-bottom: 15px;
+            span{
+                font-size: 24px;
+                color: $secondary_color;
+            }
+        }
+    }
+    .detailed-itenary {
+        h4{
+            color: white;
+            margin: 0;
+        }
+        ul{
+           
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+          
+        }
+        .nav-link {
+            color: $secondary_color;
+        }
+
+        button.active {
+            background-color: $secondary_color;
+            color: #fff;
+        }
+
+        .itinerary-accordion {
+            --bs-accordion-bg: #0b0b0b;
+            --bs-accordion-border-color: #1f1f1f;
+            --bs-accordion-btn-bg: #0f0f0f;
+            --bs-accordion-btn-color: #ffffff;
+            --bs-accordion-active-bg: #141414;
+            --bs-accordion-active-color: #f8f9fa;
+            --bs-accordion-color: #cfcfcf;
+        }
+
+      
+        .itinerary-accordion .accordion-item {
+            background-color: #0b0b0b;
+            border: 1px solid #1f1f1f;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+      .itinerary-accordion .accordion-button {
+            background: linear-gradient(135deg, #0e0e0e, #141414);
+            color: #ffffff;
+            font-weight: 500;
+            padding: 18px 22px;
+            box-shadow: none;
+        }
+
+      
+        .itinerary-accordion .accordion-button:focus {
+            box-shadow: none;
+        }
+
+      
+        .itinerary-accordion .accordion-button:not(.collapsed) {
+            background: linear-gradient(135deg, #141414, #1a1a1a);
+            color: #ffffff;
+        }
+
+       
+        .itinerary-accordion .accordion-button::after {
+            filter: invert(1);
+        }
+
+      
+        .itinerary-accordion .accordion-body {
+            background-color: #0e0e0e;
+            color: #cfcfcf;
+            padding: 20px 24px;
+        }
+        .itinerary-accordion ul {
+            padding-left: 18px;
+            margin: 0;
+        }
+
+        .itinerary-accordion li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+      
+        .itinerary-accordion strong {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+     
+        .itinerary-accordion .acclimatization-day .accordion-button {
+            background: linear-gradient(135deg, #111111, #1d1d1d);
+            border-left: 4px solid #ffc107;
+        }
+
+        .itinerary-accordion .acclimatization-day strong {
+            color: #ffc107;
+        }
+    }
+}
+.tour-detail-wrapper{
+    max-width:700px;
+    margin: 0 auto;
+    figure{
+        height:400px;
+    }
+    .trek-description{
+       margin-top: 20px;
+    }
+}
