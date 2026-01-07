@@ -1,38 +1,89 @@
 .detail-wrapper {
     border-radius: 10px;
-   
+    padding-top: 40px;
     figure {
         width: 100%;
-        height: 350px;
+        height: 100%;
         border-radius: 10px;
         margin-bottom: 20px;
         overflow: hidden;
     }
-    .trek-description{
-         
-        p{
+
+    .trek-description {
+
+        p {
             font-size: 16px;
-            color: #fff;
+            color: #000000;
             line-height: 32px;
             margin-bottom: 15px;
-            span{
+
+            span {
                 font-size: 24px;
                 color: $secondary_color;
             }
         }
     }
+
+    .trip__prelude-datafact {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 24px;
+        
+        dl {
+            background: #10292d;
+            padding: 20px;
+            border-radius: 14px;
+
+            dt {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size:16px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #ffffff;
+                margin-bottom: 6px;
+
+                svg {
+                    width: 32px;
+                    height: 32px;
+                    stroke-width: 1.5;
+                    color: #44ca1b;
+                }
+            }
+
+            dd {
+                margin: 0;
+                font-size: 14px;
+                font-weight: 600;
+                color: #ffffff;
+            }
+        }
+        figure{
+            width:40px;
+            height: 40px;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+    }
+
     .detailed-itenary {
-        h4{
-            color: white;
+        padding-top: 60px;
+        h4 {
+            color: rgb(0, 0, 0);
             margin: 0;
         }
-        ul{
-           
+
+        ul {
+            margin-top: 0 !important;
             display: flex;
             align-items: center;
             column-gap: 15px;
-          
+            margin-bottom:20px !important;
         }
+
         .nav-link {
             color: $secondary_color;
         }
@@ -52,7 +103,7 @@
             --bs-accordion-color: #cfcfcf;
         }
 
-      
+
         .itinerary-accordion .accordion-item {
             background-color: #0b0b0b;
             border: 1px solid #1f1f1f;
@@ -60,7 +111,8 @@
             margin-bottom: 15px;
             overflow: hidden;
         }
-      .itinerary-accordion .accordion-button {
+
+        .itinerary-accordion .accordion-button {
             background: linear-gradient(135deg, #0e0e0e, #141414);
             color: #ffffff;
             font-weight: 500;
@@ -68,28 +120,29 @@
             box-shadow: none;
         }
 
-      
+
         .itinerary-accordion .accordion-button:focus {
             box-shadow: none;
         }
 
-      
+
         .itinerary-accordion .accordion-button:not(.collapsed) {
             background: linear-gradient(135deg, #141414, #1a1a1a);
             color: #ffffff;
         }
 
-       
+
         .itinerary-accordion .accordion-button::after {
             filter: invert(1);
         }
 
-      
+
         .itinerary-accordion .accordion-body {
             background-color: #0e0e0e;
             color: #cfcfcf;
             padding: 20px 24px;
         }
+
         .itinerary-accordion ul {
             padding-left: 18px;
             margin: 0;
@@ -100,13 +153,13 @@
             line-height: 1.6;
         }
 
-      
+
         .itinerary-accordion strong {
             color: #ffffff;
             font-weight: 500;
         }
 
-     
+
         .itinerary-accordion .acclimatization-day .accordion-button {
             background: linear-gradient(135deg, #111111, #1d1d1d);
             border-left: 4px solid #ffc107;
@@ -116,19 +169,33 @@
             color: #ffc107;
         }
     }
+    .trek-map{
+       
+        width:100%;
+        height: auto;
+        img{
+            width:100%;
+            height:100%;
+           object-fit: contain;
+        }
+    }
 }
-.tour-detail-wrapper{
-    max-width:700px;
+
+.tour-detail-wrapper {
+    max-width: 700px;
     margin: 0 auto;
-    h2{
+
+    h2 {
         margin-bottom: 20px;
         font-size: 28px;
-        color:$secondary_color;
+        color: $secondary_color;
     }
-    figure{
-        height:400px;
+
+    figure {
+        height: 400px;
     }
-    .trek-description{
-       margin-top: 20px;
+
+    .trek-description {
+        margin-top: 20px;
     }
 }

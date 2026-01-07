@@ -6,113 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="/assets/css/style.min.css">
     <title>Bati website</title>
 </head>
 
 <body>
     <main>
-        <section class="homepage">
-            <header class="homepage-header">
-                <div class="container">
-                    <nav class="navbar navbar-expand-lg">
+        <header class="homepage-header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg p-0">
+                    <a class="navbar-brand p-0" href="index.html">
+                        <figure>
+                            <img src="assets/images/logo-3.png" alt="">
+                        </figure>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000" class="bi bi-list"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z" />
+                        </svg>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+                        <ul class="navbar-nav  mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#itenary">Trekking-Itenary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#review">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#guide">Guides</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blogs">Blogs</a>
+                            </li>
 
-                        <a class="navbar-brand" href="#">
-                            <figure>
-                                <img src="assets/images/logo.png" alt="">
-                            </figure>
+                        </ul>
+                    </div>
+                    <div class="phone-email-wrapper">
+                        <a class="nav-link phone-email" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg><span>9861437189</span>
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarText">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About-us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Itenary</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </nav>
-                </div>
-            </header>
-            <div class="homepage-content">
-                <h1><span>Explore</span> the Majesty of the Himalayas</h1>
-                <p>Adventure / culture / Unforgetable Journeys</p>
-                <span class="span">Enjoy trekking with COCO Himalaya Treks and Travels.</span>
-                <button>Enquire</button>
+                        <a class="nav-link phone-email" href="#"> <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 150 150" width="20" height="20">
+                                <path fill="none" d="M0,.2H150v150H0Z" transform="translate(0 -0.2)" />
+                                <path fill="#34a853"
+                                    d="M111.34,125.06h21.23a9.09,9.09,0,0,0,9.1-9.1V50.75L111.34,71.31Z"
+                                    transform="translate(0 -0.2)" />
+                                <path fill="#fbbc04"
+                                    d="M109.34,35.57l2,37.93,30.33-22.75V38.62A13.65,13.65,0,0,0,119.83,27.7Z"
+                                    transform="translate(0 -0.2)" />
+                                <path fill="#c5221f"
+                                    d="M8.21,38.62V50.75L38.43,76l1.93-40.54L30.05,27.7A13.65,13.65,0,0,0,8.21,38.62Z"
+                                    transform="translate(0 -0.2)" />
+                                <path fill="#4285f4"
+                                    d="M17.31,125.06H38.54V73.5L8.21,50.75V116A9.1,9.1,0,0,0,17.31,125.06Z"
+                                    transform="translate(0 -0.2)" />
+                                <path fill="#ea4335" d="M38.54,73.5V34.07l36.4,27.29,36.4-27.29V73.5l-36.4,27.29Z"
+                                    transform="translate(0 -0.2)" />
+                            </svg><span>cocohimalaya@gmail.com</span>
+                        </a>
+                    </div>
+                </nav>
             </div>
-            <div class="social-media-links">
-                <a href="#" class="Whatsapp">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#25D366" class="bi bi-whatsapp"
+        </header>
+        <section class="homepage">
+            <div class="homepage-content">
+                <h1><span>Explore</span> the majesty of the Himalayas</h1>
+                <div class="search-button">
+                    <input type="text" placeholder="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000" class="bi bi-search"
                         viewBox="0 0 16 16">
                         <path
-                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                     </svg>
-                </a>
-                <a href="#" class="Email">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="20" height="20">
-                        <path fill="none" d="M0,.2H150v150H0Z" transform="translate(0 -0.2)" />
-                        <path fill="#34a853" d="M111.34,125.06h21.23a9.09,9.09,0,0,0,9.1-9.1V50.75L111.34,71.31Z"
-                            transform="translate(0 -0.2)" />
-                        <path fill="#fbbc04" d="M109.34,35.57l2,37.93,30.33-22.75V38.62A13.65,13.65,0,0,0,119.83,27.7Z"
-                            transform="translate(0 -0.2)" />
-                        <path fill="#c5221f"
-                            d="M8.21,38.62V50.75L38.43,76l1.93-40.54L30.05,27.7A13.65,13.65,0,0,0,8.21,38.62Z"
-                            transform="translate(0 -0.2)" />
-                        <path fill="#4285f4" d="M17.31,125.06H38.54V73.5L8.21,50.75V116A9.1,9.1,0,0,0,17.31,125.06Z"
-                            transform="translate(0 -0.2)" />
-                        <path fill="#ea4335" d="M38.54,73.5V34.07l36.4,27.29,36.4-27.29V73.5l-36.4,27.29Z"
-                            transform="translate(0 -0.2)" />
-                    </svg>
-
-                </a>
-                <a href="#" class="facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#1877F2" class="bi bi-facebook"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/cocohimalayatreksandtour/" class="instagram" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
-                        <defs>
-                            <linearGradient id="instagramGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#FEDA75" />
-                                <stop offset="25%" stop-color="#FA7E1E" />
-                                <stop offset="50%" stop-color="#D62976" />
-                                <stop offset="75%" stop-color="#962FBF" />
-                                <stop offset="100%" stop-color="#4F5BD5" />
-                            </linearGradient>
-                        </defs>
-                        <path fill="url(#instagramGradient)"
-                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg xmlns="http://www.w    3.org/2000/svg" width="20" height="20" fill="#168AFF"
-                        class="bi bi-messenger" viewBox="0 0 16 16">
-                        <path
-                            d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.64.64 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.64.64 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76m5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z" />
-                    </svg>
-                </a>
+                </div>
+                <button data-bs-toggle="modal" data-bs-target="#trekInquiryModal">Enquire</button>
             </div>
         </section>
-        <section class="itenary-main-wrapper">
+        <section class="itenary-main-wrapper" id="itenary">
             <div class="container">
                 <h3>Itenary</h3>
                 <div class="row g-4">
@@ -120,8 +102,7 @@
                         <div class="itenary-wrapper">
                             <div class="card">
                                 <figure>
-                                    <img src="https://images.prismic.io/elite-exped/e8369f2c-9147-42fe-b817-f5dc8f0db027_Nimsdai-EBC-Drone-Jose01.jpg?auto=compress,format&rect=0,0,3662,4577&w=2400&h=3000"
-                                        class="card-img-top" alt="img">
+                                    <img src="assets/images/ebc.jpg" class="card-img-top" alt="img">
                                 </figure>
 
                                 <div class="card-body overlay-content">
@@ -130,7 +111,7 @@
                                         villages, ancient monasteries, and dramatic alpine landscapes to the base of the
                                         world’s highest mountain. The trek offers breathtaking views of Everest, Lhotse,
                                         Nuptse, and Ama Dablam while immersing you in rich local culture and
-                                        high-altitude adventure.</p>
+                                        high-altitude adventure. <a href="#" class="read-toggle">Read more</a></p>
                                     <a href="#" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#trekInquiryModal">Book Now</a>
                                 </div>
@@ -141,8 +122,7 @@
                         <div class="itenary-wrapper">
                             <div class="card">
                                 <figure>
-                                    <img src="https://images.prismic.io/elite-exped/b6c6b503-f666-4f89-931f-35cc4aed7b91_EliteExped-Mt-Everest-Base-Camp.webp?auto=compress,format&rect=0,0,7264,4843&w=2400&h=1600"
-                                        class="card-img-top" alt="img">
+                                    <img src="assets/images/langtang.jpg" class="card-img-top" alt="img">
                                 </figure>
                                 <div class="card-body overlay-content">
                                     <h5 class="card-title">Langtang Valley Trek</h5>
@@ -150,7 +130,7 @@
                                         forests, traditional Tamang villages, and high alpine landscapes, leading to the
                                         beautiful Langtang Valley beneath snow-capped peaks. The trek offers stunning
                                         mountain views, rich local culture, and a peaceful trekking experience close to
-                                        Kathmandu.</p>
+                                        Kathmandu. <a href="#" class="read-toggle">Read more</a></p>
                                     <a href="#" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#trekInquiryModal">Book Now</a>
                                 </div>
@@ -161,8 +141,7 @@
                         <div class="itenary-wrapper">
                             <div class="card">
                                 <figure>
-                                    <img src="https://images.pexels.com/photos/14273399/pexels-photo-14273399.png"
-                                        class="card-img-top" alt="img">
+                                    <img src="assets/images/ABC.jpg" class="card-img-top" alt="img">
                                 </figure>
                                 <div class="card-body overlay-content">
                                     <h5 class="card-title">Annapurna Base Camp</h5>
@@ -170,7 +149,8 @@
                                         terraced fields, rhododendron forests, and traditional Gurung villages,
                                         culminating at the base of the Annapurna Massif. Trekkers enjoy panoramic
                                         mountain views, diverse landscapes, and rich local culture along the way, making
-                                        it one of Nepal’s most iconic Himalayan adventures.</p>
+                                        it one of Nepal’s most iconic Himalayan adventures. <a href="#"
+                                            class="read-toggle">Read more</a></p>
                                     <a href="#" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#trekInquiryModal">Book Now</a>
                                 </div>
@@ -181,13 +161,13 @@
                         <div class="itenary-wrapper">
                             <div class="card">
                                 <figure>
-                                    <img src="https://images.prismic.io/elite-exped/b4d85354-c868-45dd-9e5e-66559e8a9a50_Everest+Base+camp.jpg?auto=format&rect=0,0,3000,2000&w=1200&h=800&dpr=1.5"
-                                        class="card-img-top" alt="img">
+                                    <img src="assets/images/larke-la-pass.jpg" class="card-img-top" alt="img">
                                 </figure>
                                 <div class="card-body overlay-content">
                                     <h5 class="card-title">larke la pass</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card’s content.</p>
+                                        the bulk of the card’s content. <a href="#" class="read-toggle">Read more</a>
+                                    </p>
                                     <a href="#" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#trekInquiryModal">Book Now</a>
                                 </div>
@@ -198,13 +178,13 @@
                         <div class="itenary-wrapper">
                             <div class="card">
                                 <figure>
-                                    <img src="https://images.prismic.io/elite-exped/88dd05a8-5723-4daf-a696-564d07ea9865_Nimsdai-Elite-Exped-Everest-Edits-Guy-Bolton166.jpg?auto=compress,format&rect=0,0,1638,2048&w=2400&h=3001"
-                                        class="card-img-top" alt="img">
+                                    <img src="assets/images/mera-peak.jpg" class="card-img-top" alt="img">
                                 </figure>
                                 <div class="card-body overlay-content">
                                     <h5 class="card-title">Mera Peak</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card’s content.</p>
+                                        the bulk of the card’s content. <a href="#" class="read-toggle">Read more</a>
+                                    </p>
                                     <a href="#" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#trekInquiryModal">Book Now</a>
                                 </div>
@@ -215,13 +195,13 @@
                         <div class="itenary-wrapper">
                             <div class="card">
                                 <figure>
-                                    <img src="https://images.prismic.io/elite-exped/bfc6aaf5-bdef-4063-96fa-2d2dc0280b84_Nimsdai-Osprey008.jpg?auto=compress,format&rect=0,0,2807,4203&w=2400&h=3594"
-                                        class="card-img-top" alt="img">
+                                    <img src="assets/images/lobuche.jpg" class="card-img-top" alt="img">
                                 </figure>
                                 <div class="card-body overlay-content">
                                     <h5 class="card-title">Lobuche</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card’s content.</p>
+                                        the bulk of the card’s content. <a href="#" class="read-toggle">Read more</a>
+                                    </p>
                                     <a href="#" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#trekInquiryModal">Book Now</a>
                                 </div>
@@ -230,6 +210,916 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="why-us-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Why Choose Us</h2>
+                    <p class="section-subtitle">
+                        Your trusted local partner for unforgettable trekking experiences in Nepal
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Card -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="why-card">
+                            <div class="icon">🥾</div>
+                            <h5>Experienced Local Guides</h5>
+                            <p>
+                                Our licensed guides are born and raised in the Himalayas with
+                                years of real trekking experience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="why-card">
+                            <div class="icon">🛡️</div>
+                            <h5>Safety First Approach</h5>
+                            <p>
+                                Proper acclimatization, emergency planning, and high-altitude
+                                safety protocols on every trek.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="why-card">
+                            <div class="icon">🌄</div>
+                            <h5>Authentic Trekking Routes</h5>
+                            <p>
+                                Carefully designed itineraries that balance scenery, culture,
+                                and altitude for the best experience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="why-card">
+                            <div class="icon">💰</div>
+                            <h5>Transparent Pricing</h5>
+                            <p>
+                                No hidden costs. Clear inclusions and fair pricing for guides,
+                                permits, accommodation, and logistics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews-main-wrapper" id="review">
+            <div class="container">
+                <h3>Reviews</h3>
+
+                <div class="swiper mySwiperreview">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review-wrap review-item">
+                                <div class="review-inner">
+                                    <div class="trekker-info">
+                                        <figure>
+                                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="trekker1">
+                                        </figure>
+                                        <div class="trekker-name">
+                                            <p>Alex Morgan</p>
+                                            <span>USA</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-wrapper">
+                                        <div class="star-wrap">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </div>
+                                        <span class="date-wrap">2025-03-10</span>
+                                    </div>
+                                    <div class="trek-name">
+                                        <p>Everest Base Camp</p>
+                                    </div>
+                                    <p class="review-desc">Coco Himalaya made our Everest Base Camp trek unforgettable!
+                                        Our guide,
+                                        Ukesh
+                                        Bati, was incredibly knowledgeable and ensured our group was safe and
+                                        comfortable at every
+                                        step.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-wrap review-item">
+                                <div class="review-inner">
+                                    <div class="trekker-info">
+                                        <figure>
+                                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="trekker2">
+                                        </figure>
+                                        <div class="trekker-name">
+                                            <p>Maria Lopez</p>
+                                            <span>Spain</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-wrapper">
+                                        <div class="star-wrap">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </div>
+                                        <span class="date-wrap">2025-02-18</span>
+                                    </div>
+                                    <div class="trek-name">
+                                        <p>Annapurna Base Camp</p>
+                                    </div>
+                                    <p class="review-desc">Absolutely amazing experience trekking Annapurna with Coco
+                                        Himalaya.
+                                        Guides
+                                        and porters were friendly and professional. Highly recommend for anyone wanting
+                                        a safe and
+                                        authentic Himalayan adventure.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-wrap review-item">
+                                <div class="review-inner">
+                                    <div class="trekker-info">
+                                        <figure>
+                                            <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="trekker3">
+                                        </figure>
+                                        <div class="trekker-name">
+                                            <p>Ravi Kumar</p>
+                                            <span>India</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-wrapper">
+                                        <div class="star-wrap">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </div>
+                                        <span class="date-wrap">2025-01-28</span>
+                                    </div>
+                                    <div class="trek-name">
+                                        <p>Langtang Valley</p>
+                                    </div>
+                                    <p class="review-desc">Langtang Valley trek was a serene and beautiful journey. The
+                                        team at Coco
+                                        Himalaya was attentive and well-organized, making the trek a smooth and
+                                        memorable
+                                        experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-wrap review-item">
+                                <div class="review-inner">
+                                    <div class="trekker-info">
+                                        <figure>
+                                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="trekker4">
+                                        </figure>
+                                        <div class="trekker-name">
+                                            <p>Sophia Chen</p>
+                                            <span>China</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-wrapper">
+                                        <div class="star-wrap">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </div>
+                                        <span class="date-wrap">2025-03-05</span>
+                                    </div>
+                                    <div class="trek-name">
+                                        <p>Gokyo Lakes</p>
+                                    </div>
+                                    <p class="review-desc">Coco Himalaya Treks & Travels delivered a fantastic Gokyo
+                                        Lakes trek. The
+                                        scenery was breathtaking, and the guides were extremely helpful and friendly
+                                        throughout the
+                                        journey.</p>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <div class="swiper-slide">
+                            <div class="review-wrap review-item">
+                                <div class="review-inner">
+                                    <div class="trekker-info">
+                                        <figure>
+                                            <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="trekker5">
+                                        </figure>
+                                        <div class="trekker-name">
+                                            <p>Liam Smith</p>
+                                            <span>UK</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-wrapper">
+                                        <div class="star-wrap">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </div>
+                                        <span class="date-wrap">2025-02-12</span>
+                                    </div>
+                                    <div class="trek-name">
+                                        <p>Mardi Himal</p>
+                                    </div>
+                                    <p class="review-desc">The Mardi Himal trek with Coco Himalaya was incredible. The
+                                        trails were
+                                        beautiful, accommodations comfortable, and our guide Diwakar Aryal was
+                                        outstanding. Highly
+                                        recommend!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-wrap review-item">
+                                <div class="review-inner">
+                                    <div class="trekker-info">
+                                        <figure>
+                                            <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="trekker6">
+                                        </figure>
+                                        <div class="trekker-name">
+                                            <p>Daniel Wright</p>
+                                            <span>Australia</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-wrapper">
+                                        <div class="star-wrap">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </div>
+                                        <span class="date-wrap">2025-01-15</span>
+                                    </div>
+                                    <div class="trek-name">
+                                        <p>Manaslu Circuit</p>
+                                    </div>
+                                    <p class="review-desc">
+                                        Manaslu Circuit trek was challenging but rewarding. Coco Himalaya handled
+                                        logistics perfectly and the guide support was excellent throughout.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="review-wrap review-item">
+                                <div class="review-inner">
+                                    <div class="trekker-info">
+                                        <figure>
+                                            <img src="https://randomuser.me/api/portraits/women/18.jpg" alt="trekker7">
+                                        </figure>
+                                        <div class="trekker-name">
+                                            <p>Emma Johansson</p>
+                                            <span>Sweden</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-wrapper">
+                                        <div class="star-wrap">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </div>
+                                        <span class="date-wrap">2025-02-03</span>
+                                    </div>
+                                    <div class="trek-name">
+                                        <p>Poon Hill Trek</p>
+                                    </div>
+                                    <p class="review-desc">
+                                        A short but beautiful trek with stunning sunrise views. Coco Himalaya’s team
+                                        made everything smooth and enjoyable.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="review-wrap review-item">
+                                <div class="review-inner">
+                                    <div class="trekker-info">
+                                        <figure>
+                                            <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="trekker8">
+                                        </figure>
+                                        <div class="trekker-name">
+                                            <p>Hiroshi Tanaka</p>
+                                            <span>Japan</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-wrapper">
+                                      <div class="star-wrap">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </div>
+                                        <span class="date-wrap">2025-03-01</span>
+                                    </div>
+                                    <div class="trek-name">
+                                        <p>Upper Mustang</p>
+                                    </div>
+                                    <p class="review-desc">
+                                        Upper Mustang felt like another world. Great cultural insight and well-managed
+                                        trekking experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="review-wrap review-item">
+                                <div class="review-inner">
+                                    <div class="trekker-info">
+                                        <figure>
+                                            <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="trekker9">
+                                        </figure>
+                                        <div class="trekker-name">
+                                            <p>Laura Rossi</p>
+                                            <span>Italy</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-wrapper">
+                                      <div class="star-wrap">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </div>
+                                        <span class="date-wrap">2025-02-21</span>
+                                    </div>
+                                    <div class="trek-name">
+                                        <p>Helambu Trek</p>
+                                    </div>
+                                    <p class="review-desc">
+                                        Peaceful trails close to Kathmandu with authentic villages. Very friendly guides
+                                        and great service.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="review-wrap review-item">
+                                <div class="review-inner">
+                                    <div class="trekker-info">
+                                        <figure>
+                                            <img src="https://randomuser.me/api/portraits/men/61.jpg" alt="trekker10">
+                                        </figure>
+                                        <div class="trekker-name">
+                                            <p>Michael Brown</p>
+                                            <span>Canada</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating-wrapper">
+                                       <div class="star-wrap">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </div>
+                                        <span class="date-wrap">2025-01-08</span>
+                                    </div>
+                                    <div class="trek-name">
+                                        <p>Everest Three Passes</p>
+                                    </div>
+                                    <p class="review-desc">
+                                        Tough but unforgettable adventure. The team ensured safety, acclimatization, and
+                                        morale throughout.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="text-center mb-4">
+                    <button class="btn btn-outline-light" id="toggleReviews">
+                        Show More
+                    </button>
+                </div> -->
+            </div>
+        </section>
+        <section class="heli-hero">
+            <div class="heli-overlay"></div>
+            <div class="container">
+                <div class="heli-content">
+                    <span class="trip-season">Trip of the Season</span>
+
+                    <h1 class="trip-title">
+                        Everest Base Camp <br />
+                        Helicopter Tour
+                    </h1>
+
+                    <div class="trip-meta">
+                        <div class="meta-item">
+                            <span class="label">Max Altitude</span>
+                            <span class="value">5550 m / 18,208 ft</span>
+                        </div>
+
+                        <div class="meta-item">
+                            <span class="label">Difficulty</span>
+                            <span class="value">Easy</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn-explore">Explore Package</a>
+                </div>
+            </div>
+        </section>
+        <section class="guide-section py-5" id="guide">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Meet Our Guides</h2>
+
+                <div class="row g-4">
+                    <!-- Guide Card -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="guide-card">
+                            <div class="guide-image">
+                                <img src="https://i.pravatar.cc/300?img=12" alt="Guide">
+                            </div>
+
+                            <div class="guide-content">
+                                <h5 class="guide-name">Nima Sherpa</h5>
+                                <span class="guide-age">Age: 34</span>
+
+                                <p class="guide-desc">
+                                    Certified mountain guide with over 12 years of experience
+                                    leading high-altitude expeditions and treks across Nepal.
+                                </p>
+
+                                <div class="guide-treks">
+                                    <span>Everest Base Camp</span>
+                                    <span>Manaslu Circuit</span>
+                                    <span>Island Peak</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="guide-card">
+                            <div class="guide-image">
+                                <img src="assets/images/bati.png" alt="Guide">
+                            </div>
+
+                            <div class="guide-content">
+                                <h5 class="guide-name">Ukesh bati</h5>
+                                <span class="guide-age">Age: 26</span>
+
+                                <p class="guide-desc">
+                                    Certified mountain guide with over 12 years of experience
+                                    leading high-altitude expeditions and treks across Nepal.
+                                </p>
+
+                                <div class="guide-treks">
+                                    <span>Everest Base Camp</span>
+                                    <span>Manaslu Circuit</span>
+                                    <span>Island Peak</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="guide-card">
+                            <div class="guide-image">
+                                <img src="assets/images/diwakar.png" alt="Guide">
+                            </div>
+
+                            <div class="guide-content">
+                                <h5 class="guide-name">Diwakar Aryal</h5>
+                                <span class="guide-age">Age: 28</span>
+
+                                <p class="guide-desc">
+                                    Certified mountain guide with over 12 years of experience
+                                    leading high-altitude expeditions and treks across Nepal.
+                                </p>
+
+                                <div class="guide-treks">
+                                    <span>Everest Base Camp</span>
+                                    <span>Manaslu Circuit</span>
+                                    <span>Island Peak</span>
+                                    <span>Everest Base Camp</span>
+                                    <span>Manaslu Circuit</span>
+                                    <span>Island Peak</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="itenary-main-wrapper travel-main-wrapper">
+            <div class="container">
+                <h3>Tours</h3>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="itenary-wrapper">
+                            <div class="card">
+                                <figure>
+                                    <img src="assets/images/mustang.jpg" class="card-img-top" alt="img">
+                                </figure>
+                                <div class="card-body overlay-content">
+                                    <h5 class="card-title">Upper Mustang Valley</h5>
+                                    <p class="card-text">Classic Himalayan journey that takes you through Sherpa
+                                        villages, ancient monasteries, and dramatic alpine landscapes to the base of the
+                                        world’s highest mountain. The trek offers breathtaking views of Everest, Lhotse,
+                                        Nuptse, and Ama Dablam while immersing you in rich local culture and
+                                        high-altitude adventure. <a href="#" class="read-toggle">Read more</a></p>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#trekInquiryModal">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="itenary-wrapper">
+                            <div class="card">
+                                <figure>
+                                    <img src="assets/images/bhaktapur.jpg" class="card-img-top" alt="img">
+                                </figure>
+                                <div class="card-body overlay-content">
+                                    <h5 class="card-title">Bhaktapur</h5>
+                                    <p class="card-text">Langtang Valley Trek is a scenic Himalayan journey through lush
+                                        forests, traditional Tamang villages, and high alpine landscapes, leading to the
+                                        beautiful Langtang Valley beneath snow-capped peaks. The trek offers stunning
+                                        mountain views, rich local culture, and a peaceful trekking experience close to
+                                        Kathmandu. <a href="#" class="read-toggle">Read more</a></p>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#trekInquiryModal">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="itenary-wrapper">
+                            <div class="card">
+                                <figure>
+                                    <img src="assets/images/chitwan.jpg" class="card-img-top" alt="img">
+                                </figure>
+                                <div class="card-body overlay-content">
+                                    <h5 class="card-title">Chitwan National Park</h5>
+                                    <p class="card-text">Annapurna Base Camp Trek is a breathtaking journey through
+                                        terraced fields, rhododendron forests, and traditional Gurung villages,
+                                        culminating at the base of the Annapurna Massif. Trekkers enjoy panoramic
+                                        mountain views, diverse landscapes, and rich local culture along the way, making
+                                        it one of Nepal’s most iconic Himalayan adventures. <a href="#"
+                                            class="read-toggle">Read more</a></p>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#trekInquiryModal">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fixed-departure">
+            <div class="container">
+                 <h3>Fixed Departure</h3>
+
+             <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="trek-card fixed">
+                        <figure>
+                            <img src="assets/images/ABC.jpg" alt="Everest Base Camp">
+                        </figure>
+ 
+                        <div class="trek-content">
+                            <h4>Everest Base Camp</h4>
+                            <ul>
+                                <li><strong>Start:</strong> 12 Mar 2025</li>
+                                <li><strong>Duration:</strong> 14 Days</li>
+                                <li><strong>Group:</strong> Max 12</li>
+                            </ul>
+
+                            <div class="price-row">
+                                <span class="price">$1,490</span>
+                                <a href="#" class="btn-view" data-bs-toggle="modal" data-bs-target="#trekInquiryModal">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="trek-card fixed">
+                        <figure>
+                            <img src="assets/images/annapurna.jpg" alt="Annapurna Base Camp">
+                        </figure>
+ 
+
+                        <div class="trek-content">
+                            <h4>Annapurna Base Camp</h4>
+                            <ul>
+                                <li><strong>Start:</strong> 22 Mar 2025</li>
+                                <li><strong>Duration:</strong> 10 Days</li>
+                                <li><strong>Group:</strong> Max 10</li>
+                            </ul>
+
+                            <div class="price-row">
+                                <span class="price">$1,050</span>
+                                <a href="#" class="btn-view" data-bs-toggle="modal" data-bs-target="#trekInquiryModal">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="trek-card fixed">
+                        <figure>
+                            <img src="assets/images/larke-la-pass.jpg" alt="Annapurna Base Camp">
+                        </figure>
+ 
+
+                        <div class="trek-content">
+                            <h4>Manaslu Base Camp</h4>
+                            <ul>
+                                <li><strong>Start:</strong> 22 Mar 2025</li>
+                                <li><strong>Duration:</strong> 10 Days</li>
+                                <li><strong>Group:</strong> Max 10</li>
+                            </ul>
+
+                            <div class="price-row">
+                                <span class="price">$1,050</span>
+                                <a href="#" class="btn-view" data-bs-toggle="modal" data-bs-target="#trekInquiryModal">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+           
+        </section>
+        <section class="short-treks">
+            <div class="container">
+                <div class="short-trek-header d-flex justify-content-between">
+                    <h3>Short treks</h3>
+                     <button data-bs-toggle="modal" data-bs-target="#trekInquiryModal">Enquire</button>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="trek-card short">
+                            <figure>
+                                <img src="assets/images/gallery-eight.jpg" alt="Mardi Himal">
+                            </figure>
+                            <div class="trek-content">
+                                <h4>Mardi Himal</h4>
+                                <span class="days">5 Days</span>
+                                <p>Scenic ridge trek with close mountain views.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="trek-card short">
+                            <figure>
+                                <img src="assets/images/gallery-eleven.jpg" alt="Poon Hill">
+                            </figure>
+                            <div class="trek-content">
+                                <h4>Poon Hill</h4>
+                                <span class="days">4 Days</span>
+                                <p>Classic sunrise trek, perfect for beginners.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="trek-card short">
+                            <figure>
+                                <img src="assets/images/gallery-nine.jpg" alt="Langtang Valley">
+                            </figure>
+                            <div class="trek-content">
+                                <h4>Langtang Valley</h4>
+                                <span class="days">6 Days</span>
+                                <p>Cultural trek close to Kathmandu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="trek-card short">
+                            <figure>
+                                <img src="assets/images/gallery-seven.jpg" alt="Langtang Valley">
+                            </figure>
+                            <div class="trek-content">
+                                <h4>tsum Valley</h4>
+                                <span class="days">6 Days</span>
+                                <p>Cultural trek close to Kathmandu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </section>
         <section class="about-us">
             <div class="container">
@@ -301,299 +1191,49 @@
                 </div>
             </div>
         </section>
-        <section class="reviews-main-wrapper">
+        <section class="gallery-wrapper">
             <div class="container">
-                <h3>Reviews</h3>
+                <h3>Gallery</h3>
+                <div class="gallery">
+                    <a href="assets/images/gallery-one.jpg" class="gallery-item" data-fancybox="gallery">
+                        <img src="assets/images/gallery-one.jpg" alt="Everest Base Camp Trek - Nepal Himalayas">
+                    </a>
+                    <a href="assets/images/gallery-two.jpg" class="gallery-item" data-fancybox="gallery">
+                        <img src="assets/images/gallery-two.jpg" alt="">
+                    </a>
+                    <a href="assets/images/gallery-three.jpg" class="gallery-item" data-fancybox="gallery">
+                        <img src="assets/images/gallery-three.jpg" alt="Annapurna Base Camp Trek Landscape">
+                    </a>
+                    <a href="assets/images/gallery-four.jpg" class="gallery-item" data-fancybox="gallery">
+                        <img src="assets/images/gallery-four.jpg" alt="">
+                    </a>
+                    <a href="assets/images/gallery-five.jpg" class="gallery-item" data-fancybox="gallery">
+                        <img src="assets/images/gallery-five.jpg" alt="Snowy Himalayan Trek - Nepal">
+                    </a>
+                    <a href="assets/images/gallery-six.jpg" class="gallery-item" data-fancybox="gallery">
+                        <img src="assets/images/gallery-six.jpg" alt="Langtang Valley Trek - Nepal">
+                    </a>
 
-                <!-- Review 1 -->
-                <div class="review-wrap">
-                    <div class="trekker-info">
-                        <figure>
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="trekker1">
-                        </figure>
-                        <div class="trekker-name">
-                            <p>Alex Morgan</p>
-                            <span>USA</span>
-                        </div>
-                    </div>
-                    <div class="rating-wrapper">
-                        <div class="star-wrap">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                        </div>
-                        <span class="date-wrap">2025-03-10</span>
-                    </div>
-                    <div class="trek-name">
-                        <p>Everest Base Camp</p>
-                    </div>
-                    <p class="review-desc">Coco Himalaya made our Everest Base Camp trek unforgettable! Our guide, Ukesh
-                        Bati, was incredibly knowledgeable and ensured our group was safe and comfortable at every step.
-                    </p>
-                </div>
-
-                <!-- Review 2 -->
-                <div class="review-wrap">
-                    <div class="trekker-info">
-                        <figure>
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="trekker2">
-                        </figure>
-                        <div class="trekker-name">
-                            <p>Maria Lopez</p>
-                            <span>Spain</span>
-                        </div>
-                    </div>
-                    <div class="rating-wrapper">
-                        <div class="star-wrap">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                        </div>
-                        <span class="date-wrap">2025-02-18</span>
-                    </div>
-                    <div class="trek-name">
-                        <p>Annapurna Base Camp</p>
-                    </div>
-                    <p class="review-desc">Absolutely amazing experience trekking Annapurna with Coco Himalaya. Guides
-                        and porters were friendly and professional. Highly recommend for anyone wanting a safe and
-                        authentic Himalayan adventure.</p>
-                </div>
-
-                <!-- Review 3 -->
-                <div class="review-wrap">
-                    <div class="trekker-info">
-                        <figure>
-                            <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="trekker3">
-                        </figure>
-                        <div class="trekker-name">
-                            <p>Ravi Kumar</p>
-                            <span>India</span>
-                        </div>
-                    </div>
-                    <div class="rating-wrapper">
-                        <div class="star-wrap">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                        </div>
-                        <span class="date-wrap">2025-01-28</span>
-                    </div>
-                    <div class="trek-name">
-                        <p>Langtang Valley</p>
-                    </div>
-                    <p class="review-desc">Langtang Valley trek was a serene and beautiful journey. The team at Coco
-                        Himalaya was attentive and well-organized, making the trek a smooth and memorable experience.
-                    </p>
-                </div>
-
-                <!-- Review 4 -->
-                <div class="review-wrap">
-                    <div class="trekker-info">
-                        <figure>
-                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="trekker4">
-                        </figure>
-                        <div class="trekker-name">
-                            <p>Sophia Chen</p>
-                            <span>China</span>
-                        </div>
-                    </div>
-                    <div class="rating-wrapper">
-                        <div class="star-wrap">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                        </div>
-                        <span class="date-wrap">2025-03-05</span>
-                    </div>
-                    <div class="trek-name">
-                        <p>Gokyo Lakes</p>
-                    </div>
-                    <p class="review-desc">Coco Himalaya Treks & Travels delivered a fantastic Gokyo Lakes trek. The
-                        scenery was breathtaking, and the guides were extremely helpful and friendly throughout the
-                        journey.</p>
-                </div>
-
-                <!-- Review 5 -->
-                <div class="review-wrap">
-                    <div class="trekker-info">
-                        <figure>
-                            <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="trekker5">
-                        </figure>
-                        <div class="trekker-name">
-                            <p>Liam Smith</p>
-                            <span>UK</span>
-                        </div>
-                    </div>
-                    <div class="rating-wrapper">
-                        <div class="star-wrap">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                        </div>
-                        <span class="date-wrap">2025-02-12</span>
-                    </div>
-                    <div class="trek-name">
-                        <p>Mardi Himal</p>
-                    </div>
-                    <p class="review-desc">The Mardi Himal trek with Coco Himalaya was incredible. The trails were
-                        beautiful, accommodations comfortable, and our guide Diwakar Aryal was outstanding. Highly
-                        recommend!</p>
-                </div>
-                <div class="text-center mt-4">
-                    <button class="btn btn-outline-light" id="toggleReviews">
-                        Show More
-                    </button>
+                    <a href="assets/images/gallery-seven.jpg" class="gallery-item" data-fancybox="gallery">
+                        <img src="assets/images/gallery-seven.jpg" alt="Himalayan Panorama - Nepal Trekking">
+                    </a>
+                    <a href="assets/images/gallery-eight.jpg" class="gallery-item" data-fancybox="gallery">
+                        <img src="assets/images/gallery-eight.jpg" alt="Langtang Valley Trek - Nepal">
+                    </a>
+                    <a href="assets/images/gallery-nine.jpg" class="gallery-item" data-fancybox="gallery">
+                        <img src="assets/images/gallery-eleven.jpg" alt="Poon Hill Trek Sunrise - Nepal">
+                    </a>
+                    <a href="assets/images/gallery-ten.jpg" class="gallery-item" data-fancybox="gallery">
+                        <img src="assets/images/gallery-nine.jpg" alt="Mustang Trek Trail - Nepal Himalayas">
+                    </a>
+                    <a href="assets/images/gallery-eleven.jpg" class="gallery-item" data-fancybox="gallery">
+                        <img src="assets/images/gallery-ten.jpg" alt="Annapurna Base Camp Trek Landscape">
+                    </a>
                 </div>
             </div>
+
         </section>
-        <section class="itenary-main-wrapper travel-main-wrapper">
-            <div class="container">
-                <h3>Tours</h3>
-                <div class="row g-4">
-                    <div class="col-lg-4">
-                        <div class="itenary-wrapper">
-                            <div class="card">
-                                <figure>
-                                    <img src="https://images.pexels.com/photos/34022824/pexels-photo-34022824.jpeg"
-                                        class="card-img-top" alt="img">
-                                </figure>
-                                <div class="card-body overlay-content">
-                                    <h5 class="card-title">Upper Mustang Valley</h5>
-                                    <p class="card-text">Classic Himalayan journey that takes you through Sherpa
-                                        villages, ancient monasteries, and dramatic alpine landscapes to the base of the
-                                        world’s highest mountain. The trek offers breathtaking views of Everest, Lhotse,
-                                        Nuptse, and Ama Dablam while immersing you in rich local culture and
-                                        high-altitude adventure.</p>
-                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#trekInquiryModal">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="itenary-wrapper">
-                            <div class="card">
-                                <figure>
-                                    <img src="https://images.pexels.com/photos/35214338/pexels-photo-35214338.jpeg"
-                                        class="card-img-top" alt="img">
-                                </figure>
-                                <div class="card-body overlay-content">
-                                    <h5 class="card-title">Bhaktapur</h5>
-                                    <p class="card-text">Langtang Valley Trek is a scenic Himalayan journey through lush
-                                        forests, traditional Tamang villages, and high alpine landscapes, leading to the
-                                        beautiful Langtang Valley beneath snow-capped peaks. The trek offers stunning
-                                        mountain views, rich local culture, and a peaceful trekking experience close to
-                                        Kathmandu.</p>
-                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#trekInquiryModal">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="itenary-wrapper">
-                            <div class="card">
-                                <figure>
-                                    <img src="https://images.pexels.com/photos/10965840/pexels-photo-10965840.jpeg"
-                                        class="card-img-top" alt="img">
-                                </figure>
-                                <div class="card-body overlay-content">
-                                    <h5 class="card-title">Chitwan National Park</h5>
-                                    <p class="card-text">Annapurna Base Camp Trek is a breathtaking journey through
-                                        terraced fields, rhododendron forests, and traditional Gurung villages,
-                                        culminating at the base of the Annapurna Massif. Trekkers enjoy panoramic
-                                        mountain views, diverse landscapes, and rich local culture along the way, making
-                                        it one of Nepal’s most iconic Himalayan adventures.</p>
-                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#trekInquiryModal">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="blogs-main-wrapper">
+        <section class="blogs-main-wrapper" id="blogs">
             <div class="container">
                 <h3>Blogs</h3>
                 <div class="row g-4">
@@ -601,8 +1241,7 @@
                         <div class="blogs-wrapper">
                             <div class="card">
                                 <figure>
-                                    <img src="https://images.pexels.com/photos/4032145/pexels-photo-4032145.jpeg"
-                                        class="card-img-top" alt="img">
+                                    <img src="assets/images/machapuchre.jpeg" class="card-img-top" alt="img">
                                 </figure>
                                 <div class="card-body">
                                     <h5 class="card-title">Everest Base Camp</h5>
@@ -610,7 +1249,7 @@
                                         villages, ancient monasteries, and dramatic alpine landscapes to the base of the
                                         world’s highest mountain. The trek offers breathtaking views of Everest, Lhotse,
                                         Nuptse, and Ama Dablam while immersing you in rich local culture and
-                                        high-altitude adventure.</p>
+                                        high-altitude adventure. <a href="#" class="read-toggle">Read more</a></p>
 
                                 </div>
                             </div>
@@ -620,8 +1259,7 @@
                         <div class="blogs-wrapper">
                             <div class="card">
                                 <figure>
-                                    <img src="https://images.pexels.com/photos/1449601/pexels-photo-1449601.jpeg"
-                                        class="card-img-top" alt="img">
+                                    <img src="assets/images/phoksundo.jpg" class="card-img-top" alt="img">
                                 </figure>
                                 <div class="card-body">
                                     <h5 class="card-title">Langtang Valley Trek</h5>
@@ -629,7 +1267,7 @@
                                         forests, traditional Tamang villages, and high alpine landscapes, leading to the
                                         beautiful Langtang Valley beneath snow-capped peaks. The trek offers stunning
                                         mountain views, rich local culture, and a peaceful trekking experience close to
-                                        Kathmandu.</p>
+                                        Kathmandu. <a href="#" class="read-toggle">Read more</a></p>
 
                                 </div>
                             </div>
@@ -639,8 +1277,7 @@
                         <div class="blogs-wrapper">
                             <div class="card">
                                 <figure>
-                                    <img src="https://images.pexels.com/photos/1531660/pexels-photo-1531660.jpeg"
-                                        class="card-img-top" alt="img">
+                                    <img src="assets/images/village.jpg" class="card-img-top" alt="img">
                                 </figure>
                                 <div class="card-body">
                                     <h5 class="card-title">Annapurna Base Camp</h5>
@@ -648,7 +1285,8 @@
                                         terraced fields, rhododendron forests, and traditional Gurung villages,
                                         culminating at the base of the Annapurna Massif. Trekkers enjoy panoramic
                                         mountain views, diverse landscapes, and rich local culture along the way, making
-                                        it one of Nepal’s most iconic Himalayan adventures.</p>
+                                        it one of Nepal’s most iconic Himalayan adventures. <a href="#"
+                                            class="read-toggle">Read more</a></p>
 
                                 </div>
                             </div>
@@ -658,63 +1296,85 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="faq-wrapper"></section> -->
-        <section class="gallery-wrapper">
+        <section class="faq-section">
             <div class="container">
-                <h3>Gallery</h3>
-                <div class="gallery">
-                    <div class="gallery-item">
-                        <img src="https://images.prismic.io/elite-exped/95738432-d4e1-49be-bdf5-010385ffa42a_Breaker-dark-2.jpg?rect=0,0,2393,1585&w=1800&h=1192&dpr=1.5"
-                            alt="Everest Base Camp Trek - Nepal Himalayas">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.prismic.io/elite-exped/b4d85354-c868-45dd-9e5e-66559e8a9a50_Everest+Base+camp.jpg?auto=format&rect=0,0,3000,2000&w=1200&h=800&dpr=1.5"
-                            alt="">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.prismic.io/elite-exped/bf1e9cd8-c6e9-4e73-ac9c-98d8e8caebc2_Lobuche-Nimsdai-Elite-Exped-Matt-Hardy-Photography-3.jpg?auto=compress,format&rect=0,0,8191,5464&w=2400&h=1601"
-                            alt="Annapurna Base Camp Trek Landscape">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.prismic.io/elite-exped/d4825aff-b1c9-4ea9-b0b5-0b5d6b44078d_Lobuche-Nimsdai-Elite-Exped-Matt-Hardy-Photography-19.jpg?auto=compress,format&rect=0,0,8105,5407&w=2400&h=1601"
-                            alt="">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.prismic.io/elite-exped/b6a9c98d-e381-49a2-bfef-b685b78508af_Nimsdai-Elite-Exped-Everest-Edits-Guy-Bolton003.jpg?auto=compress,format&rect=0,0,2048,1273&w=2400&h=1492"
-                            alt="Snowy Himalayan Trek - Nepal">
 
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.prismic.io/elite-exped/79c3acf1-0ff7-4cb6-916e-48c471ff782d_Lobuche-Nimsdai-Elite-Exped-Matt-Hardy-Photography-6.jpg?auto=compress,format&rect=0,0,8186,5461&w=2400&h=1601"
-                            alt="Langtang Valley Trek - Nepal">
-                    </div>
+                <div class="faq-header text-center">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers before your trek</p>
+                </div>
 
-                    <div class="gallery-item">
-                        <img src="https://images.prismic.io/elite-exped/8e8a31c3-e4c6-45d3-ac82-714ca95dc501_Lobuche-Nimsdai-Elite-Exped-Matt-Hardy-Photography-11.jpg?auto=compress,format&rect=0,0,8191,5464&w=2400&h=1601"
-                            alt="Himalayan Panorama - Nepal Trekking">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.pexels.com/photos/30439897/pexels-photo-30439897.jpeg"
-                            alt="Langtang Valley Trek - Nepal">
+                <!-- Search -->
+                <div class="faq-search mb-4">
+                    <input type="text" id="faqSearch" class="form-control"
+                        placeholder="Search your question...">
+                </div>
+
+                <!-- FAQ Accordion -->
+                <div class="accordion faq-accordion" id="faqAccordion">
+
+                    <div class="accordion-item faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed custom-faq-btn" data-bs-toggle="collapse"
+                                data-bs-target="#faq1">
+
+                                <span class="question-text">
+                                    Is Langtang Valley Trek suitable for beginners?
+                                </span>
+
+                                <span class="faq-icon">+</span>
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, it is suitable for beginners with basic fitness.
+                                No technical climbing is required.
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="gallery-item">
-                        <img src="https://karmalayatreks.com/images/banner6.jpg" alt="Poon Hill Trek Sunrise - Nepal">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.prismic.io/elite-exped/234da9e9-a4ca-44e0-b4da-8024de45f221_Lobuche-Nimsdai-Elite-Exped-Matt-Hardy-Photography-13.jpg?auto=compress,format&rect=0,0,8191,5464&w=2400&h=1601"
-                            alt="Mustang Trek Trail - Nepal Himalayas">
+                    <div class="accordion-item faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed custom-faq-btn" data-bs-toggle="collapse"
+                                data-bs-target="#faq2">
+
+                                <span class="question-text">
+                                    What is the best season for trekking?
+                                </span>
+
+                                <span class="faq-icon">+</span>
+                            </button>
+
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Spring (Mar–May) and Autumn (Sep–Nov) are the best seasons.
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="gallery-item">
-                        <img src="https://images.prismic.io/elite-exped/b83ecddf-3613-4027-8dae-415b2552fc7f_Lobuche-Nimsdai-Elite-Exped-Matt-Hardy-Photography.jpg?auto=compress,format&rect=0,0,5246,3928&w=2400&h=1797"
-                            alt="Annapurna Base Camp Trek Landscape">
+                    <div class="accordion-item faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed custom-faq-btn" data-bs-toggle="collapse"
+                                data-bs-target="#faq3">
+
+                                <span class="question-text">
+                                    Is travel insurance mandatory?
+                                </span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, insurance covering high altitude trekking and evacuation is required.
+                            </div>
+                        </div>
                     </div>
 
                 </div>
             </div>
-
         </section>
+
         <section class="contact-banner" id="contact-banner">
             <div class="container">
                 <div class="contact-form">
@@ -812,21 +1472,83 @@
             </div>
         </section>
         <div class="floating-actions">
-            <a href="https://wa.me/977XXXXXXXXX" target="_blank" class="whatsapp-float">
-                <svg style="pointer-events:none; display:block; height:50px; width:50px;" width="50px" height="50px" viewBox="0 0 1024 1024">
+            <!-- <a href="https://wa.me/977XXXXXXXXX" target="_blank" class="whatsapp-float">
+                <svg style="pointer-events:none; display:block; height:50px; width:50px;" width="50px" height="50px"
+                    viewBox="0 0 1024 1024">
                     <defs>
-                    <path id="htwasqicona-chat" d="M1023.941 765.153c0 5.606-.171 17.766-.508 27.159-.824 22.982-2.646 52.639-5.401 66.151-4.141 20.306-10.392 39.472-18.542 55.425-9.643 18.871-21.943 35.775-36.559 50.364-14.584 14.56-31.472 26.812-50.315 36.416-16.036 8.172-35.322 14.426-55.744 18.549-13.378 2.701-42.812 4.488-65.648 5.3-9.402.336-21.564.505-27.15.505l-504.226-.081c-5.607 0-17.765-.172-27.158-.509-22.983-.824-52.639-2.646-66.152-5.4-20.306-4.142-39.473-10.392-55.425-18.542-18.872-9.644-35.775-21.944-50.364-36.56-14.56-14.584-26.812-31.471-36.415-50.314-8.174-16.037-14.428-35.323-18.551-55.744-2.7-13.378-4.487-42.812-5.3-65.649-.334-9.401-.503-21.563-.503-27.148l.08-504.228c0-5.607.171-17.766.508-27.159.825-22.983 2.646-52.639 5.401-66.151 4.141-20.306 10.391-39.473 18.542-55.426C34.154 93.24 46.455 76.336 61.07 61.747c14.584-14.559 31.472-26.812 50.315-36.416 16.037-8.172 35.324-14.426 55.745-18.549 13.377-2.701 42.812-4.488 65.648-5.3 9.402-.335 21.565-.504 27.149-.504l504.227.081c5.608 0 17.766.171 27.159.508 22.983.825 52.638 2.646 66.152 5.401 20.305 4.141 39.472 10.391 55.425 18.542 18.871 9.643 35.774 21.944 50.363 36.559 14.559 14.584 26.812 31.471 36.415 50.315 8.174 16.037 14.428 35.323 18.551 55.744 2.7 13.378 4.486 42.812 5.3 65.649.335 9.402.504 21.564.504 27.15l-.082 504.226z"></path>
+                        <path id="htwasqicona-chat"
+                            d="M1023.941 765.153c0 5.606-.171 17.766-.508 27.159-.824 22.982-2.646 52.639-5.401 66.151-4.141 20.306-10.392 39.472-18.542 55.425-9.643 18.871-21.943 35.775-36.559 50.364-14.584 14.56-31.472 26.812-50.315 36.416-16.036 8.172-35.322 14.426-55.744 18.549-13.378 2.701-42.812 4.488-65.648 5.3-9.402.336-21.564.505-27.15.505l-504.226-.081c-5.607 0-17.765-.172-27.158-.509-22.983-.824-52.639-2.646-66.152-5.4-20.306-4.142-39.473-10.392-55.425-18.542-18.872-9.644-35.775-21.944-50.364-36.56-14.56-14.584-26.812-31.471-36.415-50.314-8.174-16.037-14.428-35.323-18.551-55.744-2.7-13.378-4.487-42.812-5.3-65.649-.334-9.401-.503-21.563-.503-27.148l.08-504.228c0-5.607.171-17.766.508-27.159.825-22.983 2.646-52.639 5.401-66.151 4.141-20.306 10.391-39.473 18.542-55.426C34.154 93.24 46.455 76.336 61.07 61.747c14.584-14.559 31.472-26.812 50.315-36.416 16.037-8.172 35.324-14.426 55.745-18.549 13.377-2.701 42.812-4.488 65.648-5.3 9.402-.335 21.565-.504 27.149-.504l504.227.081c5.608 0 17.766.171 27.159.508 22.983.825 52.638 2.646 66.152 5.401 20.305 4.141 39.472 10.391 55.425 18.542 18.871 9.643 35.774 21.944 50.363 36.559 14.559 14.584 26.812 31.471 36.415 50.315 8.174 16.037 14.428 35.323 18.551 55.744 2.7 13.378 4.486 42.812 5.3 65.649.335 9.402.504 21.564.504 27.15l-.082 504.226z">
+                        </path>
                     </defs>
-                    <linearGradient id="htwasqiconb-chat" gradientUnits="userSpaceOnUse" x1="512.001" y1=".978" x2="512.001" y2="1025.023">
+                    <linearGradient id="htwasqiconb-chat" gradientUnits="userSpaceOnUse" x1="512.001" y1=".978"
+                        x2="512.001" y2="1025.023">
                         <stop offset="0" stop-color="#61fd7d"></stop>
                         <stop offset="1" stop-color="#2bb826"></stop>
                     </linearGradient>
-                    <use xlink:href="#htwasqicona-chat" overflow="visible" style="fill: url(#htwasqiconb-chat)" fill="url(#htwasqiconb-chat)"></use>
+                    <use xlink:href="#htwasqicona-chat" overflow="visible" style="fill: url(#htwasqiconb-chat)"
+                        fill="url(#htwasqiconb-chat)"></use>
                     <g>
-                        <path style="fill: #FFFFFF;" fill="#FFF" d="M783.302 243.246c-69.329-69.387-161.529-107.619-259.763-107.658-202.402 0-367.133 164.668-367.214 367.072-.026 64.699 16.883 127.854 49.017 183.522l-52.096 190.229 194.665-51.047c53.636 29.244 114.022 44.656 175.482 44.682h.151c202.382 0 367.128-164.688 367.21-367.094.039-98.087-38.121-190.319-107.452-259.706zM523.544 808.047h-.125c-54.767-.021-108.483-14.729-155.344-42.529l-11.146-6.612-115.517 30.293 30.834-112.592-7.259-11.544c-30.552-48.579-46.688-104.729-46.664-162.379.066-168.229 136.985-305.096 305.339-305.096 81.521.031 158.154 31.811 215.779 89.482s89.342 134.332 89.312 215.859c-.066 168.243-136.984 305.118-305.209 305.118zm167.415-228.515c-9.177-4.591-54.286-26.782-62.697-29.843-8.41-3.062-14.526-4.592-20.645 4.592-6.115 9.182-23.699 29.843-29.053 35.964-5.352 6.122-10.704 6.888-19.879 2.296-9.176-4.591-38.74-14.277-73.786-45.526-27.275-24.319-45.691-54.359-51.043-63.543-5.352-9.183-.569-14.146 4.024-18.72 4.127-4.109 9.175-10.713 13.763-16.069 4.587-5.355 6.117-9.183 9.175-15.304 3.059-6.122 1.529-11.479-.765-16.07-2.293-4.591-20.644-49.739-28.29-68.104-7.447-17.886-15.013-15.466-20.645-15.747-5.346-.266-11.469-.322-17.585-.322s-16.057 2.295-24.467 11.478-32.113 31.374-32.113 76.521c0 45.147 32.877 88.764 37.465 94.885 4.588 6.122 64.699 98.771 156.741 138.502 21.892 9.45 38.982 15.094 52.308 19.322 21.98 6.979 41.982 5.995 57.793 3.634 17.628-2.633 54.284-22.189 61.932-43.615 7.646-21.427 7.646-39.791 5.352-43.617-2.294-3.826-8.41-6.122-17.585-10.714z"></path>
+                        <path style="fill: #FFFFFF;" fill="#FFF"
+                            d="M783.302 243.246c-69.329-69.387-161.529-107.619-259.763-107.658-202.402 0-367.133 164.668-367.214 367.072-.026 64.699 16.883 127.854 49.017 183.522l-52.096 190.229 194.665-51.047c53.636 29.244 114.022 44.656 175.482 44.682h.151c202.382 0 367.128-164.688 367.21-367.094.039-98.087-38.121-190.319-107.452-259.706zM523.544 808.047h-.125c-54.767-.021-108.483-14.729-155.344-42.529l-11.146-6.612-115.517 30.293 30.834-112.592-7.259-11.544c-30.552-48.579-46.688-104.729-46.664-162.379.066-168.229 136.985-305.096 305.339-305.096 81.521.031 158.154 31.811 215.779 89.482s89.342 134.332 89.312 215.859c-.066 168.243-136.984 305.118-305.209 305.118zm167.415-228.515c-9.177-4.591-54.286-26.782-62.697-29.843-8.41-3.062-14.526-4.592-20.645 4.592-6.115 9.182-23.699 29.843-29.053 35.964-5.352 6.122-10.704 6.888-19.879 2.296-9.176-4.591-38.74-14.277-73.786-45.526-27.275-24.319-45.691-54.359-51.043-63.543-5.352-9.183-.569-14.146 4.024-18.72 4.127-4.109 9.175-10.713 13.763-16.069 4.587-5.355 6.117-9.183 9.175-15.304 3.059-6.122 1.529-11.479-.765-16.07-2.293-4.591-20.644-49.739-28.29-68.104-7.447-17.886-15.013-15.466-20.645-15.747-5.346-.266-11.469-.322-17.585-.322s-16.057 2.295-24.467 11.478-32.113 31.374-32.113 76.521c0 45.147 32.877 88.764 37.465 94.885 4.588 6.122 64.699 98.771 156.741 138.502 21.892 9.45 38.982 15.094 52.308 19.322 21.98 6.979 41.982 5.995 57.793 3.634 17.628-2.633 54.284-22.189 61.932-43.615 7.646-21.427 7.646-39.791 5.352-43.617-2.294-3.826-8.41-6.122-17.585-10.714z">
+                        </path>
                     </g>
                 </svg>
-            </a>
+            </a> -->
+            <div class="social-media-links mb-4">
+                <a href="#" class="Whatsapp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#25D366" class="bi bi-whatsapp"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                    </svg>
+                </a>
+                <a href="#" class="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="20" height="20">
+                        <path fill="none" d="M0,.2H150v150H0Z" transform="translate(0 -0.2)" />
+                        <path fill="#34a853" d="M111.34,125.06h21.23a9.09,9.09,0,0,0,9.1-9.1V50.75L111.34,71.31Z"
+                            transform="translate(0 -0.2)" />
+                        <path fill="#fbbc04" d="M109.34,35.57l2,37.93,30.33-22.75V38.62A13.65,13.65,0,0,0,119.83,27.7Z"
+                            transform="translate(0 -0.2)" />
+                        <path fill="#c5221f"
+                            d="M8.21,38.62V50.75L38.43,76l1.93-40.54L30.05,27.7A13.65,13.65,0,0,0,8.21,38.62Z"
+                            transform="translate(0 -0.2)" />
+                        <path fill="#4285f4" d="M17.31,125.06H38.54V73.5L8.21,50.75V116A9.1,9.1,0,0,0,17.31,125.06Z"
+                            transform="translate(0 -0.2)" />
+                        <path fill="#ea4335" d="M38.54,73.5V34.07l36.4,27.29,36.4-27.29V73.5l-36.4,27.29Z"
+                            transform="translate(0 -0.2)" />
+                    </svg>
+
+                </a>
+                <a href="#" class="facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#1877F2" class="bi bi-facebook"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/cocohimalayatreksandtour/" class="instagram" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                        <defs>
+                            <linearGradient id="instagramGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FEDA75" />
+                                <stop offset="25%" stop-color="#FA7E1E" />
+                                <stop offset="50%" stop-color="#D62976" />
+                                <stop offset="75%" stop-color="#962FBF" />
+                                <stop offset="100%" stop-color="#4F5BD5" />
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#instagramGradient)"
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg>
+                </a>
+                <a href="#" class="tiktok_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-tiktok"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                    </svg>
+                </a>
+            </div>
             <button class="review-float" data-bs-toggle="modal" data-bs-target="#reviewModal">
                 ★ Review
             </button>
@@ -987,10 +1709,26 @@
                                 placeholder="Langtang, Everest, Annapurna">
                         </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Duration (Days)</label>
-                            <input type="number" class="form-control dark-input" placeholder="e.g. 10" min="1" step="1">
+                      <div class="mb-3">
+                        <label class="form-label">Preferred Trek Start Date</label>
+
+                        <div class="input-group">
+                            <input 
+                                type="date" 
+                                class="form-control dark-input" 
+                                id="startDate"
+                            >
+                            <span class="input-group-text calendar-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff"
+                                    class="bi bi-calendar-event" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z" />
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                </svg>
+                            </span>
                         </div>
+                    </div>
 
                         <div class="mb-3">
                             <label class="form-label">Country of Origin</label>
@@ -1046,9 +1784,9 @@
                         </div>
 
                         <div class="col-12">
-                           
+
                             <div class="rating-stars">
-                                
+
                                 <input type="radio" name="rating" id="star5"><label for="star5">★</label>
                                 <input type="radio" name="rating" id="star4"><label for="star4">★</label>
                                 <input type="radio" name="rating" id="star3"><label for="star3">★</label>
@@ -1071,6 +1809,8 @@
 </body>
 <script src="assets/javascript/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+ 
 <script src="assets/javascript/main.js"></script>
 
 </html>
